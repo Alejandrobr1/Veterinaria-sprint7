@@ -70,7 +70,7 @@ El sistema utiliza diferentes formatos de archivo para almacenar la información
 - Almacena el historial médico y consultas
 - Estructura:  "consultas": [
         {
-            "Fecha de la consulta": "DD/MM/AAAA",
+            "Fecha de la consulta": "DD-MM-AAAA",
             "Motivo": "Texto",
             "Diagnostico": "Texto",
             "Mascota": "Texto"
@@ -98,3 +98,17 @@ Los logs se almacenan en el archivo `clinica_veterinaria.log` con la siguiente c
    - Errores en entrada de datos
    - Fallos en búsqueda de mascotas
    - Opciones de menú inválidas
+
+#Pruebas Unitarias
+El proyecto incluye una suite de pruebas unitarias ubicada en GestorVeterinaria/test_veterinaria.py utilizando el módulo unittest de Python.
+Estas pruebas cubren:
+
+
+Validación de datos de entrada (edad, teléfono)
+Creación y lectura de archivos de datos
+Registro y búsqueda de mascotas, dueños y consultas
+Manejo de errores personalizados
+Integridad de las operaciones principales del sistema
+
+Para ejecutar las pruebas, usa el siguiente comando en la terminal desde la raíz del proyecto:
+python -m unittest GestorVeterinaria/test_veterinaria.py
